@@ -1,11 +1,12 @@
+name: hrrr
+channels:
+  - conda-forge
 dependencies:
-  - nbserverproxy
-  - conda-forge::altair
-  - conda-forge::plotly
-  - holoviews=1.12.2
-  - hvplot=0.4.0
-  - panel=0.5.1
-  - param=1.9.0
-  - pyviz_comms=0.7.2
-  - bokeh=1.1.0
-  - tornado<6
+  - nodejs
+  - jupyter=1.0.0
+  - jupyterlab=1.0.2
+  - pip
+  - pip:
+       - "--editable=git+https://github.com/intake/xrviz@master#egg=hrrr"
+  - metpy
+  - geoviews
